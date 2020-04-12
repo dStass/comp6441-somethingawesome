@@ -1,0 +1,33 @@
+{
+  "users" : ["richard", "david", "trump"],
+  "profile" : {
+    "richard" : {
+      "name" : "Richard",
+      "path" : "data/enrolled/richard/",
+      "enrolled_images" : [
+        "img1.jpg"
+      ]
+    },
+
+    "david" : {
+      "name" : "David",
+      "path" : "data/enrolled/david/",
+      "enrolled_images" : [
+        "img1.jpg",
+        "img2.jpg"
+      ]
+    },
+
+    "trump" : {
+      "name" : "Donald Trump",
+      "path" : "data/enrolled/trump/",
+      "enrolled_images" : [
+        "img1.jpg",
+        "img2.jpg",
+        "img3.jpg",
+        "img4.jpg"
+      ]
+    }
+
+  }
+}

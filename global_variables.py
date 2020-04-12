@@ -1,0 +1,5 @@
+PROFILE = 'profile'
+USERS = 'users'
+NAME = 'name'
+PATH = 'path'
+ENROLLED_IMAGES = 'enrolled_images'
