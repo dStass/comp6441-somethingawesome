@@ -1,3 +1,4 @@
+import os
 import json
 import face_recognition as frec
 from global_variables import *
@@ -8,19 +9,14 @@ def load(json_path):
   for user_id in enrolled[USERS]:
     user_profile = enrolled[PROFILE][user_id]
     image_path = user_profile[PATH]
-    for i, image_file in enumerate(user_profile[ENROLLED_IMAGES]):
-      image = frec.load_image_file(image_path+image_file)
-      image_encoding = frec.face_encodings(image)[0]
-      user_profile[ENROLLED_IMAGES][i] = image_encoding  # get replace the file with its encoding
+    image_encodings = []
 
+    # for all files in directory
+    for image_file in os.listdir(image_path):
+      image = frec.load_image_file(image_path + image_file)
+      image_encoding = frec.face_encodings(image)[0]
+      image_encodings.append(image_encoding)
+
+    user_profile[ENROLLED_IMAGES] = image_encodings
   return enrolled
   
-
-  # print('pass2')
-  # users = json_read[USERS]
-  # for user in users:
-  #   name = user[NAME]
-  #   path = user[PATH]
-  #   print(name, path)
-
-  # print("loading")

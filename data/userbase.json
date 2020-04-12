@@ -4,29 +4,19 @@
     "richard" : {
       "name" : "Richard",
       "path" : "data/enrolled/richard/",
-      "enrolled_images" : [
-        "img1.jpg"
-      ]
+      "fun_fact" : "Sun Tzu is cool!"
     },
 
     "david" : {
       "name" : "David",
       "path" : "data/enrolled/david/",
-      "enrolled_images" : [
-        "img1.jpg",
-        "img2.jpg"
-      ]
+      "fun_fact": "I don't like capsicum"
     },
 
     "trump" : {
       "name" : "Donald Trump",
       "path" : "data/enrolled/trump/",
-      "enrolled_images" : [
-        "img1.jpg",
-        "img2.jpg",
-        "img3.jpg",
-        "img4.jpg"
-      ]
+      "fun_fact" : "BUILD THE WALL"
     }
 
   }

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="content">Account</h1>
+    <img src="{{url_for('static', filename=site.PROFILE_PICTURE)}}"/>
+    <h1 class="content">Name: {{site.NAME}}</h1>
+    <h1 class="content">Fun fact: {{site.FUN_FACT}}</h1>
+    
+{% endblock %}
