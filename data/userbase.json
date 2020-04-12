@@ -3,18 +3,21 @@
   "profile" : {
     "richard" : {
       "name" : "Richard",
+      "sha256":"61bffea9215f65164ad18b45aff1436c0c165d0d5dd2087ef61b4232ba6d2c1a",
       "path" : "data/enrolled/richard/",
       "fun_fact" : "Sun Tzu is cool!"
     },
 
     "david" : {
       "name" : "David",
+      "sha256" : "07d046d5fac12b3f82daf5035b9aae86db5adc8275ebfbf05ec83005a4a8ba3e",
       "path" : "data/enrolled/david/",
       "fun_fact": "I don't like capsicum"
     },
 
     "trump" : {
       "name" : "Donald Trump",
+      "sha256": "a60a52382d7077712def2a69eda3ba309b19598944aa459ce418ae53b7fb5d58",
       "path" : "data/enrolled/trump/",
       "fun_fact" : "BUILD THE WALL"
     }

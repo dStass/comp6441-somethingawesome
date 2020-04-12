@@ -2,8 +2,22 @@
 
 {% block content %}
     <h1 class="content">Account</h1>
+
+    {% if site.AUTHENTICATED == true %}
+    <h1 class="content">Authenticated</h1>
     <img src="{{url_for('static', filename=site.PROFILE_PICTURE)}}"/>
     <h1 class="content">Name: {{site.NAME}}</h1>
     <h1 class="content">Fun fact: {{site.FUN_FACT}}</h1>
-    
+    {%- else %}
+    <h1 class="content">Not Authenticated</h1>
+    <form action="{{ url_for('validate') }}" method="post">
+        <h1 class="content">Password</h1>
+        <input type="password" name="password" value="" />
+        <h1 class="content">Two Factor Key</h1>
+        <input type="text" name="twofactor" value="" />
+        <input type="submit" value="Authenticate"/>
+    </form>
+    {%- endif %}
+
+
 {% endblock %}
