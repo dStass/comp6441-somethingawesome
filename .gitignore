@@ -1,3 +1,11 @@
 *.pyc
 *.jpg
 *.png
+credentials.json
+
+# 2 factor authentication 
+build/*
+face_recognition_models/*
+scipy-extra-dll/*
+dist/*
+app.spec

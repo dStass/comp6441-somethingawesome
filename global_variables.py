@@ -1,6 +1,7 @@
 PROFILE = 'profile'
 USERS = 'users'
 NAME = 'name'
+EMAIL = 'email'
 PATH = 'path'
 ENROLLED_IMAGES = 'enrolled_images'
 FUN_FACT = 'fun_fact'

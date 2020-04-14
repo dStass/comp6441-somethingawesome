@@ -11,10 +11,10 @@
     {%- else %}
     <h1 class="content">Not Authenticated</h1>
     <form action="{{ url_for('validate') }}" method="post">
-        <h1 class="content">Password</h1>
-        <input type="password" name="password" value="" />
-        <h1 class="content">Two Factor Key</h1>
-        <input type="text" name="twofactor" value="" />
+        <h1 class="content">Password (Simply the id for demo purposes): {{site.USER_ID}}</h1>
+        <input type="password" name="PASSWORD" value="" />
+        <h1 class="content">Two Factor Authentication Code (sent to linked email)</h1>
+        <input type="text" name="AUTH" value="" />
         <input type="submit" value="Authenticate"/>
     </form>
     {%- endif %}

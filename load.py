@@ -4,8 +4,7 @@ import face_recognition as frec
 from global_variables import *
 
 def load(json_path):
-  f = open(json_path, 'r')
-  enrolled = json.loads(f.read())
+  enrolled = load_simple(json_path)
   for user_id in enrolled[USERS]:
     user_profile = enrolled[PROFILE][user_id]
     image_path = user_profile[PATH]
@@ -20,3 +19,7 @@ def load(json_path):
     user_profile[ENROLLED_IMAGES] = image_encodings
   return enrolled
   
+def load_simple(json_path):
+  f = open(json_path, 'r')
+  read_json = json.loads(f.read())
+  return read_json
